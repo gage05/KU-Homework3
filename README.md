@@ -7,7 +7,7 @@ My motivation behind this project was that I wanted to learn how to use Javascri
 ## Table of Contents (Optional)
 
 ![Screenshot of Deployed Application](password%20generator%20photo.png)
-![Link to Deployed Application]()
+![Link to Deployed Application](https://gage05.github.io/KU-Homework3/)
 
 ## Installation
 
