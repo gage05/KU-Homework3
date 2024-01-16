@@ -36,3 +36,9 @@ function writePassword() {
   // Prompt for password length
   var passwordLength = prompt("Enter the length of the password (between 8 and 128 characters):");
   passwordLength = parseInt(passwordLength);
+
+  // Validate password length
+  if (passwordLength < 8 || passwordLength > 128 || isNaN(passwordLength)) {
+    alert("Invalid password length. Please enter a valid length between 8 and 128 characters.");
+    return;
+  }
