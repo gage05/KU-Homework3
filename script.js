@@ -19,5 +19,6 @@ function generatePassword(length, includeLowercase, includeUppercase, includeNum
     var randomIndex = Math.floor(Math.random() * allChars.length);
     password += allChars.charAt(randomIndex);
   }
-
+  
+  return password;
 }
