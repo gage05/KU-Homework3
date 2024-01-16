@@ -19,6 +19,17 @@ function generatePassword(length, includeLowercase, includeUppercase, includeNum
     var randomIndex = Math.floor(Math.random() * allChars.length);
     password += allChars.charAt(randomIndex);
   }
-  
+
   return password;
 }
+
+// Assignment Code
+var generateBtn = document.querySelector("#generate");
+
+// Write password to the #password input
+function writePassword() {
+  // Prompt for password criteria
+  var includeLowercase = window.prompt("Include lowercase characters? (yes/no)").toLowerCase() === 'yes';
+  var includeUppercase = window.prompt("Include uppercase characters? (yes/no)").toLowerCase() === 'yes';
+  var includeNumeric = window.prompt("Include numeric characters? (yes/no)").toLowerCase() === 'yes';
+  var includeSpecial = window.prompt("Include special characters? (yes/no)").toLowerCase() === 'yes';
