@@ -33,3 +33,6 @@ function writePassword() {
   var includeUppercase = window.prompt("Include uppercase characters? (yes/no)").toLowerCase() === 'yes';
   var includeNumeric = window.prompt("Include numeric characters? (yes/no)").toLowerCase() === 'yes';
   var includeSpecial = window.prompt("Include special characters? (yes/no)").toLowerCase() === 'yes';
+  // Prompt for password length
+  var passwordLength = prompt("Enter the length of the password (between 8 and 128 characters):");
+  passwordLength = parseInt(passwordLength);
