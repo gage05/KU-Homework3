@@ -5,4 +5,12 @@ function generatePassword(length, includeLowercase, includeUppercase, includeNum
   var uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   var numericChars = "0123456789";
   var specialChars = "!@#$%^&*()_-+=<>?/";
+
+  // Combine character sets based on user selection
+  var allChars = "";
+  if (includeLowercase) allChars += lowercaseChars;
+  if (includeUppercase) allChars += uppercaseChars;
+  if (includeNumeric) allChars += numericChars;
+  if (includeSpecial) allChars += specialChars;
+
 }
