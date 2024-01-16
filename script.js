@@ -42,3 +42,17 @@ function writePassword() {
     alert("Invalid password length. Please enter a valid length between 8 and 128 characters.");
     return;
   }
+
+  // Validate at least one character type is selected
+  if (!includeLowercase && !includeUppercase && !includeNumeric && !includeSpecial) {
+    alert("Please select at least one character type for the password.");
+    return;
+  }
+
+
+  var password = generatePassword(passwordLength, includeLowercase, includeUppercase, includeNumeric, includeSpecial);
+  var passwordText = document.querySelector("#password");
+
+
+  passwordText.value = password;
+}
